@@ -21,7 +21,6 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => ({
 	placeShip: (player, coord, shipType) => dispatch(placeShip(player, coord, shipType)),
 	updatePlacedShip: (player, name) => dispatch(updatePlacedShip(player, name)),
-
 });
 
 
@@ -119,8 +118,6 @@ class ShipPlacement extends React.Component {
 
 	render() {
 		const {playerIndex} = this.props;
-
-		console.log(this.props);
 
 		return (
 			<div>

@@ -8,7 +8,7 @@ import Battle from "./Battle";
 
 const {Step} = Steps;
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
 	return {
 		boardSize: state.game.boardSize,
 	}
@@ -29,12 +29,6 @@ class GameProcess extends React.Component {
 	next = () => {
 		this.setState(prevState => {
 			return {currentStep: prevState.currentStep + 1}
-		})
-	};
-
-	prev = () => {
-		this.setState(prevState => {
-			return {currentStep: prevState.currentStep - 1}
 		})
 	};
 

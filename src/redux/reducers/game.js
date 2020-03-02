@@ -1,6 +1,6 @@
 const gameState ={
 	win : false,
-	turn: 0,
+	turn: 1,
 	boardSize: 10,
 	ships: [
 		{

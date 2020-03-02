@@ -33,8 +33,6 @@ class Battle extends React.Component {
 	}
 
 	handleFire = (playerIndex, row, col) => {
-		console.log(playerIndex, row, col);
-
 		const {turn, fire, toggleTurn} = this.props;
 		if (playerIndex !== turn + 1) {
 			message.warning("It's not your turn yet!")
@@ -47,9 +45,11 @@ class Battle extends React.Component {
 	render() {
 		return (
 			<div>
+				<h2 align={"center"}>{"It's turn for Player"+(!this.props.turn+1)}</h2>
 				<div className="boardContainer">
 
 					<div className={"board-pop-container"}>
+						<h3 align={"center"}>Player1</h3>
 						<Board
 							playerIndex={1}
 							step={"battle"}
@@ -66,6 +66,7 @@ class Battle extends React.Component {
 					</div>
 
 					<div  className={"board-pop-container"}>
+						<h3 align={"center"}>Player2</h3>
 						<Board
 							playerIndex={2}
 							step={"battle"}
@@ -76,7 +77,7 @@ class Battle extends React.Component {
 						<Popover
 							content={<Board playerIndex={2} step={"preGame"}/>}
 							placement="bottomRight">
-							<Button type="primary">Hover to show Player1's ship map</Button>
+							<Button type="primary">Hover to show Player2's ship map</Button>
 						</Popover>,
 
 					</div>
