@@ -1,0 +1,57 @@
+.cell {
+	background: #fff;
+	border: 1px solid #999;
+	float: left;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 34px;
+	height: 34px;
+	margin-right: -1px;
+	margin-top: -1px;
+	padding: 0;
+	text-align: center;
+	width: 34px;
+}
+
+.cell:focus {
+	outline: none;
+}
+
+.label {
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	border: none;
+}
+
+.boardContainer {
+	margin: -30px 20px 20px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 400px;
+}
+
+.board {
+	margin: 50px;
+	display: grid;
+	grid-gap: 0;
+	height: 350px;
+	width: 350px;
+}
+
+.userInputArea {
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.collapse {
+	margin-top: 90px;
+	width: 300px;
+}
+
+.board-pop-container{
+	align-items: center;
+	justify-content: center;
+}
